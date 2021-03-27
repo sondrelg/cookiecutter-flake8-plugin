@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*-
+from .plugin import Plugin
 
-# First party modules
-from {{ cookiecutter.project_slug }}._version import __version__  # noqa
+__all__ = [
+    'Plugin',
+]

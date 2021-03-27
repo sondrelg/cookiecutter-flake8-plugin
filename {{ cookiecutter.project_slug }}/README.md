@@ -1,6 +1,8 @@
-# {{ cookiecutter.project_slug }}
+# {{ cookiecutter.project_name }}
 
-TODO: Explain in at most 140 characters what this project is.
+This project was generated using a [flake8-plugin cookiecutter project](https://github.com/sondrelg/cookiecutter-flake8-plugin).
+
+TODO: Explain in ~140 characters what this project is.
 
 ## TODO after cloning this
 
@@ -9,18 +11,13 @@ TODO: Explain in at most 140 characters what this project is.
 $ git init
 
 # Add the link to a server
-$ git remote add origin git@github.com:MartinThoma/awesome_project.git
+$ git remote add origin git@github.com:{{ cookiecutter.github_username }}/{{ cookiecutter.project_name}}.git
 
 # Initialize the virtual environment
-$ pipenv --python 3.8
+$ pip install poetry
+$ poetry install
 
-# Import the requirements
-$ pipenv install -r requirements.txt
-
-# Import the dev requirements
-$ pipenv install --dev --pre -r requirements-dev.txt
-
-# Make sure the repository stays that nice
+# Make sure the repository stays nice
 $ pre-commit install
 
 # Fill out all TODOs
